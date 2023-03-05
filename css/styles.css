@@ -18,7 +18,7 @@ button {
 p,
 li {
   font-family: var(--content-font);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 ul {
@@ -39,7 +39,7 @@ section.hero__wrapper {
 
   display: flex;
   flex-direction: column;
-  height: 30rem;
+  height: 40rem;
 }
 
 div.nav-wrapper button {
@@ -78,6 +78,7 @@ section.hero h1 {
 }
 
 img.hero-arrow {
+  margin-top: 1rem;
   max-width: 3rem;
   height: auto;
 }
@@ -114,6 +115,7 @@ section.main-division button {
   margin-top: 0.5rem;
   color: var(--very-dark-saturated-blue);
   cursor: pointer;
+  font-size: 1.25rem;
 }
 
 section.main-division button::after {
@@ -163,4 +165,79 @@ section.main-division:nth-last-child(-n + 2) {
 section.main-division:nth-last-child(-n + 2) h2,
 section.main-division:nth-last-child(-n + 2) p {
   color: var(--dark-saturated-cyan);
+}
+
+/* Depoimentos */
+
+section.client-testimonials-wrapper h2 {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section.client-testimonials-wrapper {
+  padding: 2rem;
+}
+
+section.client-testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+div.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+img.client__img {
+  border-radius: 100%;
+  width: 6rem;
+  margin-bottom: 1.2rem;
+}
+
+p.client-testimonial {
+  text-align: center;
+  color: var(--very-dark-grayish-blue);
+  font-size: 1.3rem;
+}
+
+p.client-name {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  color: var(--very-dark-saturated-blue);
+  font-weight: 900;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+p.client-occupation {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+/* Footer */
+
+section.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0;
+  column-gap: 0;
+}
+
+div.image-grid__img-wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+img.image-grid__img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
