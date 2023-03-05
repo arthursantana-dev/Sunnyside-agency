@@ -1,1 +1,77 @@
 @import './variables.css';
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2 {
+	font-family: var(--title-font);
+}
+
+p, li {
+	font-family: var(--content-font);
+	font-weight: 500;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header/ Hero */
+
+section.hero__wrapper{
+	background-image: url(../images/mobile/image-header.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	height: 30rem;
+}
+
+div.nav-wrapper button {
+	background-color: none;
+	border: none;
+
+}
+
+div.nav-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+nav.header__nav {
+	display: none;
+}
+
+section.hero {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.hero h1 {
+	margin-top: 7rem;
+	font-size: 2.75rem;
+	color: white;
+	text-transform: uppercase;
+}
+
+img.hero-arrow {
+	max-width: 3rem;
+	height: auto;
+}
+
+
+/*  */
