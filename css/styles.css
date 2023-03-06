@@ -164,7 +164,7 @@ section.main-division:nth-last-child(-n + 2) {
 
 section.main-division:nth-last-child(-n + 2) h2,
 section.main-division:nth-last-child(-n + 2) p {
-  color: var(--dark-saturated-cyan);
+  color: var(--dark-desaturated-cyan);
 }
 
 /* Depoimentos */
@@ -240,4 +240,41 @@ img.image-grid__img {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--dark-moderate-cyan);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.footer__logo {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(24%) saturate(919%)
+    hue-rotate(116deg) brightness(93%) contrast(88%);
+	width: 40%;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+footer ul li {
+  color: var(--dark-desaturated-cyan);
+  margin: 0;
+}
+
+div.icons-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 1.3rem;
+	padding-bottom: 3rem;
 }
