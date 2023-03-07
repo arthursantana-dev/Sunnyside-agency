@@ -63,6 +63,17 @@ nav.header__nav {
   display: none;
 }
 
+nav.header__nav--mobile {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
 section.hero {
   display: flex;
   justify-content: center;
@@ -75,6 +86,7 @@ section.hero h1 {
   font-size: 2.75rem;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 img.hero-arrow {
@@ -156,8 +168,9 @@ section.main-division#photography {
 }
 
 section.main-division:nth-last-child(-n + 2) {
-  min-height: 47rem;
-  background-size: contain;
+  min-height: 40rem;
+  background-size: cover;
+  background-position: center center;
   justify-content: flex-end;
   background-repeat: no-repeat;
 }
