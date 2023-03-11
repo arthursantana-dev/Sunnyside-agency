@@ -61,17 +61,48 @@ header {
 
 nav.header__nav {
   display: none;
+  min-width: 22rem;
+}
+
+nav.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 }
 
 nav.header__nav--mobile {
   position: absolute;
-  top: 19%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  width: 70%;
-  padding: 2rem;
-  border-radius: 1rem;
+  width: 60%;
+  height: 10rem;
+  display: none;
+}
+
+button.nav__contact-button {
+  background-color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-family: var(--content-font);
+  font-size: 1rem;
+}
+
+nav.header__nav--mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav.header__nav--mobile button.nav__contact-button {
+  background-color: var(--yellow);
+  font-family: var(--title-font);
 }
 
 section.hero {
@@ -157,6 +188,22 @@ section.main-division p {
   line-height: 30px;
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+section.main-division#egg {
+  grid-area: egg;
+}
+
+section.main-division#brand {
+  grid-area: brand;
+}
+
+section.main-division#cup {
+  grid-area: cup;
+}
+
+section.main-division#audience {
+  grid-area: audience;
 }
 
 section.main-division#design {
@@ -267,7 +314,7 @@ footer {
 img.footer__logo {
   filter: brightness(0) saturate(100%) invert(27%) sepia(24%) saturate(919%)
     hue-rotate(116deg) brightness(93%) contrast(88%);
-	width: 40%;
+  width: 40%;
   margin-bottom: 2rem;
 }
 
@@ -286,8 +333,64 @@ footer ul li {
 }
 
 div.icons-wrapper {
-	display: flex;
-	justify-content: center;
-	gap: 1.3rem;
-	padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 850px) {
+  .header__burguer-button {
+    display: none;
+  }
+
+  .header__nav--mobile {
+    display: none;
+  }
+
+  .header__nav {
+    display: block !important;
+  }
+
+  section.hero__wrapper {
+    background-position: center 80% !important;
+    height: 65rem !important;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "brand egg" "cup audience" "design photography";
+  }
+
+  .main-division h2 {
+    font-size: 3rem !important;
+  }
+
+  .main-division p {
+    font-size: 1.5rem !important;
+  }
+
+  .client-testimonials {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  div.client {
+    max-width: 30%;
+  }
+
+  section.image-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img.footer__logo {
+    width: 17rem;
+  }
+
+  footer ul li {
+    font-size: 1.5rem;
+  }
 }
